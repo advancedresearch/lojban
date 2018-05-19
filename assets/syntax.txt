@@ -1,0 +1,207 @@
+_seps: ",.;!"
+
+11 cmelva = {
+  "cmeclax":"cmeclax(nameless)"
+  "ednbryx":"ednbryx(Edinburgh)"
+  "estraix":"estraix(Austria)"
+  "nix":"nix(Miss)"
+  "ostraix":"ostraix(Austria)"
+  "rirx":"rirx(river)"
+  "tix":"tix(daughter)"
+  "vanxox":"vanxox(van Gogh)"
+  "xali,uyd":"xali,uyd(Hollywood)"
+  "xas":"xas(sea)"
+  "xavmast":"xavmast(June)"
+  "xavyplin":"xavyplin(Saturn)"
+  "xelvetik":"xelvetik(Switzerland)"
+  "xelvet":"xelvet(Switzerland)"
+  "xel":"xel(Hel_norse_mythology)"
+  "xesos":"xesos(Jesus)"
+  "xin":"xin(Indean_Ocean)"
+  "xonkon":"xonkon(Hong Kong)"
+  "xrison":"xrison(Christ)"
+  "xrmAiynis":"xrmAiynis(Hermione)"
+  "xrvatsk":"xrvatsk(Croatia)"
+  "xunplin":"xunplin(Mars)"
+  "xyngon":"xyngon(Hong Kong)"
+}
+10 tense_cmavo = {
+  "pu":"pu(past)"
+  "ca":"ca(present)"
+  "vu":"vu(far_way)"
+  "vi":"vi(nearby)"
+  "ba":"ba(future)"
+}
+9 mod_cmavo = {
+  "se":"se(swap_1st_2nd)"
+  "te":"te(swap_1st_3rd)"
+  "ve":"ve(swap_1st_4th)"
+  "xe":"xe(swap_1st_5th)"
+  "na":"na(not)"
+}
+8 att_cmavo = [?"." {
+  "ie":"agreement"
+  "ei":"obligation"
+  "ui":"happy_about"
+  "ji'a"
+  "ku'i"
+  "za'a"
+  "pe'i"
+  "ru'a"
+}]
+7 break = [!att_cmavo {
+  ".i"
+  "."
+  "i"
+  "xu":"xu(is_it_true?)"
+  "xo":"xo(how_much?)"
+  "ni'oni'oni'o"
+  "ni'oni'o"
+  "ni'o":"paragraph_break"
+} .w!]
+8 lujvo = {
+  "blari'o":"blari'o(blue_green)"
+  "kevzda":"kevzda(cave__forHousing_location)"
+  "labyxu'e":"labyxu'e(is_rose)"
+  "xandi'i":"xandi'i(is_cash)"
+  "xunblabi":"xunblabi(pink)"
+}
+7 fu'ivla = {
+  "glacitsi":"glacitsi(summer)"
+  "monsuta":"monsuta(monster)"
+}
+7 exp_gismu = {
+  "xlobi":"xlobi(is_hobby__of)"
+}
+6 gismu = {
+  "bajra":"bajra(runs_on_surface__usingLimbs_withGait)"
+  "bangu":"bangu(language__usedBy_toExpress)"
+  "banzu":"banzu(suffices__forPurpose_underConditions)"
+  "cilre":"cilre(learns__aboutSubject_fromSource)"
+  "claxu":"claxu(is_without__lacks)"
+  "cmene":"cmene(name__of_usedBy)"
+  "culno":"culno(filled__with)"
+  "cutci":"cutci(shoe__forProtecting_ofMaterial)"
+  "drani":"drani(corret__inAspect_inSituation_byStandard)"
+  "dunda":"dunda(gives__gift_to)"
+  "gerku":"gerku(dog__ofSpecies)"
+  "gusni":"gusni(is_light__illuminating_source)"
+  "jipci":"jipci(is_chicken__ofSpecies)"
+  "jufra":"jufra(sentence__about_inLanguage)"
+  "kanro":"kanro(healthy__byStandard)"
+  "kantu":"kantu(elementary_particle__ofProperty)"
+  "kevna":"kevna(cavity__in)"
+  "klama":"klama(comes__destination_origin_route_vehicle)"
+  "kurji":"kurji(takesCare_of)"
+  "melbi":"melbi(beautiful__to_byAspect_aestethic)"
+  "mulno":"mulno(finished)"
+  "pendo":"pendo(friend__of)"
+  "pluka":"pluka(pleasant__to_underConditions)"
+  "sidju":"sidju(helps__object_do_activity)"
+  "stali":"stali(stays__at)"
+  "sutra":"sutra(fast__at)"
+  "tavla":"tavla(talks__to_about_inLanguage)"
+  "vecnu":"vecnu(seller__sells_to_amount)"
+  "xabju":"xabju(lives__at)"
+  "xadba":"xadba(exactly__byStandard)"
+  "xadni":"xadni(the_body__of)"
+  "xajmi":"xajmi(funny__to_inProperty)"
+  "xagji":"xagji(hungers__for_food)"
+  "xagri":"xagri(oboe__withReed)"
+  "xaksu":"xaksu(uses_up__resource)"
+  "xalbo":"xalbo(frivolous__about)"
+  "xalka":"xalka(quantity_of__alcoholType_source)"
+  "xalni":"xalni(panics__by)"
+  "xamgu":"xamgu(good__for_byStandard)"
+  "xampo":"xampo(is__ampere_inCurrent_byStandard)"
+  "xamsi":"xamsi(sea__ofPlanet_ofFluid)"
+  "xanka":"xanka(nervous__about_underConditions)"
+  "xance":"xance(the_hand__of)"
+  "xanri":"xanri(imagined__by)"
+  "xanto":"xando(elephant__ofSpecies)"
+  "xarci":"xarci(weapon__against_by)"
+  "xarju":"xarju(pig__ofSpecies)"
+  "xasdo":"xasdo(reflects_asiatic__inAspect)"
+  "xasli":"xasli(donkey_ofSpecies)"
+  "xasne":"xasne(the_sweat__fromBody_organs)"
+  "xatra":"xatra(letter__to_from_content)"
+  "xebni":"xebni(hates__object)"
+  "xecto":"xecto(a_hundred__of_inDimension)"
+  "xekri":"xekri(black)"
+  "xelso":"xelso(reflects_greek__inAspect)"
+  "xendo":"xendo(is_kind__to_inBehavior)"
+  "xindo":"xindo(reflects_hindu__inAspect)"
+  "xinmo":"xinmo(quantity_of_ink__color_writingDevice)"
+  "xirma":"xirma(horse__ofSpecies)"
+  "xislu":"xislu(a_wheel__ofVehicle_madeOf)"
+  "xispo":"xispo(reflects_hispano_american__inAspect)"
+  "xlali":"xlali(bad__for_byStandard_unacceptableTo)"
+  "xlura":"xlura(agent__influences_intoAction_byThreat)"
+  "xrabo":"xrabo(reflects_arabic__inAspect)"
+  "xrani":"xrani(harms__victim_inProperty_resultingInInjury)"
+  "xriso":"xriso(pertains_christian__inAspect)"
+  "xruba":"xruba(quantity_of__buckwheat)"
+  "xrula":"xrula(flower__ofSpecies)"
+  "xruki":"xruki(turkey__ofSpecies)"
+  "xruti":"xruti(agent__returns_toOrigin_from)"
+  "xotli":"xotli(hotel__location_operatedBy)"
+  "xukmi":"xukmi(instance_of__substance_withPurity)"
+  "xunre":"xunre(red)"
+  "xurdo":"xurdo(reflects_urdu__inAspect)"
+  "xusra":"xusra(agent__asserts)"
+  "xutla":"xutla(smooth)"
+  "zarci":"zarci(market__for_operatedBy)"
+  "zasti":"zasti(exists__for_metaphysics)"
+}
+5 brivla = {gismu lujvo fu'ivla "go'i":"go'i(restate)" "mo"}
+4 tanru = [
+  ?[tense_cmavo:"tense_cmavo" .w!]
+  ?.r!([mod_cmavo:"mod_cmavo" .w!])
+  brivla:"brivla"
+]
+3 selbri = [tanru:"tanru" .r?([.w! tanru:"tanru"])]
+3 le = [
+  "le" .w! ?[sumti:"sumti(possession)" .w!]
+  {
+    ["nu" .w! bridi:"nu(abstraction)"]
+    selbri:"selbri(the_described_as)"
+  }
+  ?[.w! "ku"]
+]
+3 lo = [
+  "lo" .w! ?[sumti:"sumti(possession)" .w!]
+  {
+    ["nu" .w! bridi:"nu(abstraction)"]
+    selbri:"selbri(the_one_that_does)"
+  }
+  .w! "ku"
+]
+2 sumti = [{
+  le:"le"
+  lo:"lo"
+  ["la" .w! .._seps!:"la(name)"]
+  "mi":"mi(I)"
+  "do":"do(you)"
+  "ti":"ti(this_near_speaker)"
+  "ta":"ta(that_near_listener)"
+  "tu":"tu(that_far_away)"
+  "ma":"ma(who?)"
+  "ko":"ko(make_it_true_for_you)"
+  cmelva:"cmelva"
+  "xa":"xa(6)"
+  "zo'e":"zo'e(unspecified)"
+  "di'u":"di'u(previous_sentence)"
+  {
+    "la'edi'u":"la'edi'u(meaning_of_previous_sentence)"
+    ["la'e" .w! "di'u":"la'edi'u(meaning_of_previous_sentence)"]
+  }
+  .$_:"number"
+} ?[.w! att_cmavo:"att_cmavo"]]
+1 bridi = [
+  ?[att_cmavo:"att_cmavo" .w!]
+  ?[.r!([sumti:"sumti(object)" .w!])
+  ?["cu" .w!]]
+  selbri:"selbri"
+  ?[.w! .s!(.w! sumti:"sumti(object)")]
+]
+0 document = [.w? ?break .r?([.w? ?break bridi:"bridi"]) .w? ?break]
