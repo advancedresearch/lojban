@@ -45,3 +45,9 @@ with English definitions. This helps researchers since Lojban is unfamiliar to m
 
 - A functional Lojban vocabulary
 - Rust AST representation of the Lojban language for use in code
+
+
+### Acknowledgments
+
+We have included a parallel English-Lojban corpus from [Tatoeba](https://en.wikipedia.org/wiki/Tatoeba).
+It is licensed under [a Creative Commons Attribution 2.0 license](https://en.wikipedia.org/wiki/Tatoeba#License)
