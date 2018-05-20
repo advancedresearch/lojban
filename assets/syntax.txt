@@ -1,6 +1,6 @@
 _seps: ",.;!"
 
-11 cmelva = {
+11 cmevla__name_words = {
   "cmeclax":"cmeclax(nameless)"
   "ednbryx":"ednbryx(Edinburgh)"
   "estraix":"estraix(Austria)"
@@ -25,21 +25,21 @@ _seps: ",.;!"
   "xunplin":"xunplin(Mars)"
   "xyngon":"xyngon(Hong Kong)"
 }
-10 tense_cmavo = {
+10 tense_cmavo__structure_word = {
   "pu":"pu(past)"
   "ca":"ca(present)"
   "vu":"vu(far_way)"
   "vi":"vi(nearby)"
   "ba":"ba(future)"
 }
-9 mod_cmavo = {
+9 mod_cmavo__structure_word = {
   "se":"se(swap_1st_2nd)"
   "te":"te(swap_1st_3rd)"
   "ve":"ve(swap_1st_4th)"
   "xe":"xe(swap_1st_5th)"
   "na":"na(not)"
 }
-8 att_cmavo = [?"." {
+8 att_cmavo__structure_word = [?"." {
   "ie":"agreement"
   "ei":"obligation"
   "ui":"happy_about"
@@ -49,7 +49,7 @@ _seps: ",.;!"
   "pe'i"
   "ru'a"
 }]
-7 break = [!att_cmavo {
+7 break = [!att_cmavo__structure_word {
   ".i"
   "."
   "i"
@@ -59,21 +59,21 @@ _seps: ",.;!"
   "ni'oni'o"
   "ni'o":"paragraph_break"
 } .w!]
-8 lujvo = {
+8 lujvo__verb = {
   "blari'o":"blari'o(blue_green)"
   "kevzda":"kevzda(cave__forHousing_location)"
   "labyxu'e":"labyxu'e(is_rose)"
   "xandi'i":"xandi'i(is_cash)"
   "xunblabi":"xunblabi(pink)"
 }
-7 fu'ivla = {
+7 fu'ivla__loan_words = {
   "glacitsi":"glacitsi(summer)"
   "monsuta":"monsuta(monster)"
 }
-7 exp_gismu = {
+7 exp_gismu__verb = {
   "xlobi":"xlobi(is_hobby__of)"
 }
-6 gismu = {
+6 gismu__verb = {
   "bajra":"bajra(runs_on_surface__usingLimbs_withGait)"
   "bangu":"bangu(language__usedBy_toExpress)"
   "banzu":"banzu(suffices__forPurpose_underConditions)"
@@ -153,30 +153,30 @@ _seps: ",.;!"
   "zarci":"zarci(market__for_operatedBy)"
   "zasti":"zasti(exists__for_metaphysics)"
 }
-5 brivla = {gismu lujvo fu'ivla "go'i":"go'i(restate)" "mo"}
-4 tanru = [
-  ?[tense_cmavo:"tense_cmavo" .w!]
-  ?.r!([mod_cmavo:"mod_cmavo" .w!])
-  brivla:"brivla"
+5 brivla__verb = {gismu__verb lujvo__verb fu'ivla__loan_words "go'i":"go'i(restate)" "mo"}
+4 tanru__compound_verb = [
+  ?[tense_cmavo__structure_word:"tense_cmavo__structure_word" .w!]
+  ?.r!([mod_cmavo__structure_word:"mod_cmavo__structure_word" .w!])
+  brivla__verb:"brivla__verb"
 ]
-3 selbri = [tanru:"tanru" .r?([.w! tanru:"tanru"])]
+3 selbri__main_verb = [tanru__compound_verb:"tanru__compound_verb" .r?([.w! tanru__compound_verb:"tanru__compound_verb"])]
 3 le = [
-  "le" .w! ?[sumti:"sumti(possession)" .w!]
+  "le" .w! ?[sumti__argument:"sumti__argument(possession)" .w!]
   {
-    ["nu" .w! bridi:"nu(abstraction)"]
-    selbri:"selbri(the_described_as)"
+    ["nu" .w! bridi__clause:"nu(abstraction)"]
+    selbri__main_verb:"selbri__main_verb(the_described_as)"
   }
   ?[.w! "ku"]
 ]
 3 lo = [
-  "lo" .w! ?[sumti:"sumti(possession)" .w!]
+  "lo" .w! ?[sumti__argument:"sumti__argument(possession)" .w!]
   {
-    ["nu" .w! bridi:"nu(abstraction)"]
-    selbri:"selbri(the_one_that_does)"
+    ["nu" .w! bridi__clause:"nu(abstraction)"]
+    selbri__main_verb:"selbri__main_verb(the_one_that_does)"
   }
   .w! "ku"
 ]
-2 sumti = [{
+2 sumti__argument = [{
   le:"le"
   lo:"lo"
   ["la" .w! .._seps!:"la(name)"]
@@ -187,7 +187,7 @@ _seps: ",.;!"
   "tu":"tu(that_far_away)"
   "ma":"ma(who?)"
   "ko":"ko(make_it_true_for_you)"
-  cmelva:"cmelva"
+  cmevla__name_words:"cmevla__name_words"
   "xa":"xa(6)"
   "zo'e":"zo'e(unspecified)"
   "di'u":"di'u(previous_sentence)"
@@ -196,12 +196,12 @@ _seps: ",.;!"
     ["la'e" .w! "di'u":"la'edi'u(meaning_of_previous_sentence)"]
   }
   .$_:"number"
-} ?[.w! att_cmavo:"att_cmavo"]]
-1 bridi = [
-  ?[att_cmavo:"att_cmavo" .w!]
-  ?[.r!([sumti:"sumti(object)" .w!])
+} ?[.w! att_cmavo__structure_word:"att_cmavo__structure_word"]]
+1 bridi__clause = [
+  ?[att_cmavo__structure_word:"att_cmavo__structure_word" .w!]
+  ?[.r!([sumti__argument:"sumti__argument(object)" .w!])
   ?["cu" .w!]]
-  selbri:"selbri"
-  ?[.w! .s!(.w! sumti:"sumti(object)")]
+  selbri__main_verb:"selbri__main_verb"
+  ?[.w! .s!(.w! sumti__argument:"sumti__argument(object)")]
 ]
-0 document = [.w? ?break .r?([.w? ?break bridi:"bridi"]) .w? ?break]
+0 document = [.w? ?break .r?([.w? ?break bridi__clause:"bridi"]) .w? ?break]
