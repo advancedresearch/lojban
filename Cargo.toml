@@ -6,5 +6,9 @@ authors = ["Sven Nilsen <bvssvni@gmail.com>"]
 [lib]
 name = "lojban"
 
+[[bin]]
+name = "corpus"
+path = "src/bin/corpus.rs"
+
 [dependencies]
 piston_meta = "0.29.1"
