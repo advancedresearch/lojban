@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tmx version="1.4">
+<header creationdate="Sat Feb  1 22:07:06 2014"
+          srclang="en"
+          adminlang="en"
+          o-tmf="unknown"
+          segtype="sentence"
+          creationtool="Uplug"
+          creationtoolversion="unknown"
+          datatype="PlainText" />
+  <body>
+    <tu>
+      <tuv xml:lang="en"><seg>Let's try something.</seg></tuv>
+      <tuv xml:lang="jbo"><seg>xa'e mi'o troci</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>I have to go to sleep.</seg></tuv>
+      <tuv xml:lang="jbo"><seg>mi bilga lo nu sipna</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>I have to go to sleep.</seg></tuv>
+      <tuv xml:lang="jbo"><seg>mi sipna .ei</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>I have to go to sleep.</seg></tuv>
+      <tuv xml:lang="jbo"><seg>.a'enai</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>Today is June 18th and it is Muiriel's birthday!</seg></tuv>
+      <tuv xml:lang="jbo"><seg>li pabi pi'e pi'e xa ca detri .i je ri te jbena fi la.muiriel.</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>Muiriel is 20 now.</seg></tuv>
+      <tuv xml:lang="jbo"><seg>la caku .miuri'el. cu nanca li reno</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>The password is "Muiriel".</seg></tuv>
+      <tuv xml:lang="jbo"><seg>japyvla fa zoi gy. Muiriel .gy.</seg></tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,37 @@
+10 prelude0 = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+11 prelude1 = "<tmx version=\"1.4\">"
+12 prelude2 = "<header creationdate=\"Sat Feb  1 22:07:06 2014\""
+13 prelude3 = "srclang=\"en\""
+14 prelude4 = "adminlang=\"en\""
+15 prelude5 = "o-tmf=\"unknown\""
+16 prelude6 = "segtype=\"sentence\""
+17 prelude7 = "creationtool=\"Uplug\""
+18 prelude8 = "creationtoolversion=\"unknown\""
+19 prelude9 = "datatype=\"PlainText\" />"
+
+20 begin_body = [.w? "<body>" .w?]
+21 end_body = [.w? "</body>" .w?]
+22 end_doc = [.w? "</tmx>" .w?]
+
+30 row = [.w? begin_row .w? entry_en .w? entry_jbo .w? end_row .w?]
+31 begin_row = "<tu>"
+32 end_row = "</tu>"
+
+40 entry_en_pre = "<tuv xml:lang=\"en\"><seg>"
+41 entry_jbo_pre = "<tuv xml:lang=\"jbo\"><seg>"
+42 entry_post = "</seg></tuv>"
+
+50 entry_en = [.w? entry_en_pre .w? text_en .w? entry_post .w?]
+51 entry_jbo = [.w? entry_jbo_pre .w? text_jbo .w? entry_post .w?]
+52 text_en = ..."<"?:"en"
+52 text_jbo = ..."<"?:"jbo"
+
+100 prelude = [prelude0 .w? prelude1 .w? prelude2 .w? prelude3 .w? prelude4 .w? prelude5 .w? prelude6 .w? prelude7 .w? prelude8 .w? prelude9 .w?]
+
+101 rows = {
+    [.w? row:"head" .w? rows:"tail" .w?]
+    [.w? row:"head" .w?]
+    }	 
+    
+
+102 document = [.w? prelude .w? begin_body .w? rows .w? end_body end_doc]
