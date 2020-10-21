@@ -40,14 +40,14 @@ _seps: ",.;!"
   "na":"na(not)"
 }
 8 att_cmavo__structure_word = [?"." {
-  "ie":"agreement"
-  "ei":"obligation"
-  "ui":"happy_about"
-  "ji'a"
-  "ku'i"
-  "za'a"
-  "pe'i"
-  "ru'a"
+  "ie":"ie(agreement)"
+  "ei":"ei(obligation)"
+  "ui":"ui(happy_about)"
+  "ji'a":"ji'a(in_addition)"
+  "ku'i":"ku'i(but)"
+  "za'a":"za'a(I_observe)"
+  "pe'i":"pe'i(I_opine)"
+  "ru'a":"ru'a(I_postulate)"
 }]
 7 break = [!att_cmavo__structure_word {
   ".i"
