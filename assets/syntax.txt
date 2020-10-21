@@ -195,7 +195,7 @@ _seps: ",.;!"
     "la'edi'u":"la'edi'u(meaning_of_previous_sentence)"
     ["la'e" .w! "di'u":"la'edi'u(meaning_of_previous_sentence)"]
   }
-  .$_:"number"
+  [!"." .$_:"number"]
 } ?[.w! att_cmavo__structure_word:"att_cmavo__structure_word"]]
 1 bridi__clause = [
   ?[att_cmavo__structure_word:"att_cmavo__structure_word" .w!]
