@@ -11,4 +11,4 @@ name = "corpus"
 path = "src/bin/corpus.rs"
 
 [dependencies]
-piston_meta = "0.29.1"
+piston_meta = "1.0.0"
